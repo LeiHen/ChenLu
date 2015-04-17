@@ -10,6 +10,118 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
+
+.w{
+	width: 1000px;
+	margin: auto;
+}
+.w_man{
+	max-width: 1440px;
+	margin: auto;
+}
+.w_min{
+	min-width: 1000px;
+	margin: auto;
+}
+
+.wrap{
+
+}
+
+
+
+
+
+
+/* head */
+.header{
+	background:url(../images/head_bg.jpg) repeat-x 0 0;
+	height:  87px;
+}
+.header .logo{
+	display: inline-block;
+}
+.header .logo img{
+	display: block;
+	max-height: 87px;
+}
+
+
+
+/* 中间 */
+.centre{
+
+}
+
+
+/* 底部 */
+.footer{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+	布局
+*/
+
+
+/*
+	元件
+*/
+
+
+
+/*
+	模块
+*/
+
+
+/* banner */
+.mob_banner{
+
+}
+
+
+
+/*
+	功能
+*/
+
+
+
+/*
+	状态
+*/
+
+
+
+
+
+
+
+
+
+/*
+	布局
+*/
+
+
+
+
+
+
+
+
+
 /*
 
 	全局
