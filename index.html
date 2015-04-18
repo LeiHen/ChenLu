@@ -36,7 +36,10 @@
                 <a href="index.html" class="logo">
                     <img src="images/logo_text.png" alt="logo" title='返回首页'>
                 </a>
-                <nav class="nav">
+                
+                
+                
+                <nav class="m_nav">
                     <a href="index.html" class="link">首页</a>
                     <a href="about.html" class="link">关于宸路</a>
                     <a href="business.html" class="link">最新动态</a>
@@ -47,22 +50,36 @@
                     <a href="joinus.html" class="link">宸路看点</a>
                     <a href="services.html" class="link">联系我们</a>
                 </nav>
+                
+                <div class="m_search">
+                    <input type="search" class="input_txt" >
+                    <span class="hint">输入关键字</span>
+                    
+                    <div class="submit_btn icon_search">
+                        <input class="btn" type='submit'  value="">
+                    </div>
+                    
+                </div>
+                
             </div>
         </header>
         <!-- header ]] -->
         
-        <ul class="mob_banner">
-            <li class="itme"><img src="images/banner/index/img_01_1440x420.jpg" alt=""></li>
+        <!-- banner [[ -->
+        <ul class="m_banner w_min">
+            <li class="itme hover"><img src="images/banner/index/img_01_1440x420.jpg" alt=""></li>
             <li class="itme"><img src="images/banner/index/img_02_1440x420.jpg" alt=""></li>
             <li class="itme"><img src="images/banner/index/img_03_1440x420.jpg" alt=""></li>
             <li class="itme"><img src="images/banner/index/img_04_1440x420.jpg" alt=""></li>
         </ul>
+        <!-- banner [[ -->
         
-        <!-- header [[ -->
-        <div class="centre">
+        
+        <!-- main [[ -->
+        <main class="main">
             
-        </div>
-        <!-- header ]] -->
+        </main>
+        <!-- main ]] -->
         
         
         
@@ -104,14 +121,6 @@
         <script src="js/common.js"></script>
         <script src="js/page.js"></script>
         
-		<script type="text/javascript">	
-			//初始化 统一入口
-			function init(){
-
-			}
-			init();
-		</script>
-		
 		<!-- css3兼容低版本 -->
 		<!--[if lte IE 8]>
         <script type="text/javascript" src="js/hack/PIE/PIE.js"></script>
@@ -130,5 +139,14 @@
         <!--[if lte IE 7]>
         <script type="text/javascript" src="js/hack/font-ie7.js"></script>  
         <![endif]-->
+        
+        
+        <script type="text/javascript">	
+			//初始化 统一入口
+			function init(){
+
+			}
+			init();
+		</script>
 	</body>
 </html>

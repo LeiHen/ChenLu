@@ -6,9 +6,7 @@ body{
 	font-size:62.5%;
 }
 
-a:link,a:visited,a:hover,a:active{
-
-}
+a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 
 .w{
@@ -49,7 +47,7 @@ a:link,a:visited,a:hover,a:active{
 
 
 /* 中间 */
-.centre{
+.main{
 
 }
 
@@ -79,22 +77,58 @@ a:link,a:visited,a:hover,a:active{
 */
 
 
+/* 按钮 */
+.n_btn{
+	
+}
+
+
 
 /*
 	模块
 */
 
-
-/* banner */
-.mob_banner{
+/* 导航 */
+.m_nav{
+	float: right;
+}
+.m_nav .link{
 
 }
+
+
+/* banner */
+.m_banner{ width: 100%; position: relative; overflow: hidden; background: #f8f8f7; }
+.m_banner .itme{ position: absolute; left: 0; top: 0; width: 100%; z-index: 1; opacity: 0; filter: alpha(opacity=0); }
+/*.m_banner .itme:first-child{ opacity: 1; filter: alpha(opacity=100); }*/
+.m_banner .itme img{ display: block; width: 100%; }
+.m_banner .hover{ float: none; position: relative; z-index: 2; opacity: 1; filter: alpha(opacity=100); }
+
+
+
+/* 搜索 */
+.m_search{ position: relative; float: right; font-size: 10px; margin: 12px 0 0 0; }
+.m_search input{ float: left; display:block; font-size: 1.4em; line-height: 1em; border:1px solid #cdcbcb; background: none; outline: none; position: relative; }
+.m_search .input_txt{ padding: 3px 10px; width: 100px; border-radius:8px; background: #fff; z-index: 1; }
+.m_search .input_txt:focus{
+	width: 160px;
+}
+
+.m_search .hint{ position: absolute; padding: 3px 10px; left: 0; z-index: 1; display:block; font-size: 1.4em; color: #cdcbcb; }
+
+.m_search .submit_btn{ float: left; display: block; width: 40px; text-align: center; padding: 3px 0px 3px 10px; margin: 0 0 0 -10px; border:1px solid #cdcbcb; color: #cdcbcb; background: #fff; background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #e1dddd)); background:-moz-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:-webkit-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:-o-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:-ms-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:linear-gradient(to bottom, #ffffff 5%, #e1dddd 100%); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1dddd',GradientType=0); font-size: 16px; line-height: 1em; position: relative; }
+
+.m_search .submit_btn:hover{ background: #fff; background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e1dddd), color-stop(1, #ffffff)); background:-moz-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:-webkit-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:-o-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:-ms-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:linear-gradient(to bottom, #e1dddd 5%, #ffffff 100%); }
+
+.m_search .btn{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; font-size: 0; border:none; cursor: pointer; }
+
 
 
 
 /*
 	功能
 */
+
 
 
 
@@ -126,12 +160,22 @@ a:link,a:visited,a:hover,a:active{
 
 	全局
 	
+	   B色块类
+
 	  	  主色
 	 	  辅色 
     	高亮色
     	阴影色
     	点睛色
     	背景色
+
+
+	   T文字类
+
+	  T1正文字
+	  T2弱文字
+	  T3高亮字
+
 
 	  字体颜色 
 
@@ -140,6 +184,21 @@ a:link,a:visited,a:hover,a:active{
 	  正文颜色 
 	
 	  过渡颜色
+
+	   
+	   I图标类
+
+
+	   L线条类
+	   		正  
+	   		弱
+	   	  高亮
+	   	    深 灰 cdcbcb
+		
+
+	  BT按钮类
+
+
 
 	主标题大小 
 	副标题大小 
