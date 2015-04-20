@@ -32,17 +32,11 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 
 /* head */
-.header{
-	background:url(../images/head_bg.jpg) repeat-x 0 0;
-	height:  87px;
-}
-.header .logo{
-	display: inline-block;
-}
-.header .logo img{
-	display: block;
-	max-height: 87px;
-}
+.header{ background:url(../images/head_bg.jpg) repeat-x 0 0; height:  87px; }
+.header .logo{ display: inline-block; float: left; }
+.header .logo img{ display: block; max-height: 74px; margin: 6px 0; }
+.header .m_search{ float:right; }
+.header .m_nav{ float:right; }
 
 
 
@@ -51,19 +45,16 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 }
 
-
-/* 底部 */
-.footer{
+.sub_main{
 
 }
 
 
-
-
-
-
-
-
+/* 底部 */
+.footer{ }
+.footer .m_friendlink{ font-size: 1.6em; line-height: 1em; color: #373636; margin: 40px auto 20px auto; }
+.footer .m_nav_b{ }
+.footer .copy{ padding:30px 0 20px 0; text-align: center; font-size: 1.4em; line-height: 1.4em; color: #cdcbcb; }
 
 
 
@@ -76,6 +67,11 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 	元件
 */
 
+/* 标题 */
+.u_title{ position: relative; overflow: hidden; }
+.u_title .txt{ float: left; display: block; height: 100%; font-size: 2em; line-height: 1em; padding:10px 10px 0 0; color: #d13306; }
+.u_title .line{ display: block; overflow: hidden; border-bottom:4px solid #d13306; position: relative; bottom: 0; height: 26px; }
+
 
 /* 按钮 */
 .n_btn{
@@ -84,17 +80,29 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 
 
+
 /*
 	模块
 */
 
 /* 导航 */
-.m_nav{
-	float: right;
-}
-.m_nav .link{
+.m_nav{ padding: 14px 0; }
+.m_nav .link{ float: left; display: block; border-left:1px solid #cdcbcb; border-right:1px solid #fff; }
+.m_nav .link:first-child{ border-left:none; }
+.m_nav .link:last-child{ border-right:none; }
+.m_nav .cbr{ border-right:none; }
+.m_nav .link .bg{ display: inline-block; +display: inline; +zoom: 1; background: none; color: #333333; padding: 0 6px; border-radius: 4px; font-size: 1.4em; line-height: 1.4em; margin: 0 4px; }
+.m_nav .link:hover .bg,
+.m_nav .hover .bg{ background: #d13306; color: #fff; }
 
-}
+/* 底部导航 */
+.m_nav_b{ background: #d13306; height: 40px; text-align: center; }
+.m_nav_b .link{ display: inline-block; +display: inline; +zoom: 1; color: #fff; font-size: 1.6em; line-height: 1em; margin: 6px 4px; }
+.m_nav_b .link .bg{ display: inline-block; +display: inline; +zoom: 1; padding: 6px 10px; }
+.m_nav_b .link .bg:hover{ background: #fff; color: #d13306; border-radius:4px; }
+
+/*  */
+
 
 
 /* banner */
@@ -104,23 +112,63 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .m_banner .itme img{ display: block; width: 100%; }
 .m_banner .hover{ float: none; position: relative; z-index: 2; opacity: 1; filter: alpha(opacity=100); }
 
+/*  banner 子页 */
+.m_banenr_sub{ }
+.m_banenr_sub img{ display: block; width: 100%; }
 
 
 /* 搜索 */
-.m_search{ position: relative; float: right; font-size: 10px; margin: 12px 0 0 0; }
+.m_search{ position: relative; font-size: 10px; margin: 12px 0 0 0; }
 .m_search input{ float: left; display:block; font-size: 1.4em; line-height: 1em; border:1px solid #cdcbcb; background: none; outline: none; position: relative; }
 .m_search .input_txt{ padding: 3px 10px; width: 100px; border-radius:8px; background: #fff; z-index: 1; }
-.m_search .input_txt:focus{
-	width: 160px;
+.m_search .input_txt:focus{ width: 160px; }
+.m_search .hint{ position: absolute; padding: 3px 10px; left: 0; z-index: 1; display:block; font-size: 1.4em; color: #cdcbcb; }
+.m_search .submit_btn{ float: left; display: block; width: 40px; text-align: center; padding: 3px 0px 3px 10px; margin: 0 0 0 -10px; border:1px solid #cdcbcb; color: #cdcbcb; background: #fff; background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #e1dddd)); background:-moz-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:-webkit-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:-o-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:-ms-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:linear-gradient(to bottom, #ffffff 5%, #e1dddd 100%); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1dddd',GradientType=0); font-size: 16px; line-height: 1em; position: relative; }
+.m_search .submit_btn:hover{ background: #fff; background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e1dddd), color-stop(1, #ffffff)); background:-moz-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:-webkit-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:-o-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:-ms-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:linear-gradient(to bottom, #e1dddd 5%, #ffffff 100%); }
+.m_search .btn{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; font-size: 0; border:none; cursor: pointer; }
+
+/* 友情链接 */
+.m_friendlink{ vertical-align: top; }
+.m_friendlink .title{ vertical-align: top; font-size: 1em; line-height: 74px; display: inline-block; +display: inline; +zoom: 1; padding: 0 6px 0 0; }
+.m_friendlink .link{ display: inline-block; +display: inline; +zoom: 1; margin: 0 10px; }
+.m_friendlink .link img{ display: block; }
+
+
+/* 广告 */
+.m_ad{
+
+}
+.m_ad img{
+	display: block;
 }
 
-.m_search .hint{ position: absolute; padding: 3px 10px; left: 0; z-index: 1; display:block; font-size: 1.4em; color: #cdcbcb; }
 
-.m_search .submit_btn{ float: left; display: block; width: 40px; text-align: center; padding: 3px 0px 3px 10px; margin: 0 0 0 -10px; border:1px solid #cdcbcb; color: #cdcbcb; background: #fff; background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #e1dddd)); background:-moz-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:-webkit-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:-o-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:-ms-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:linear-gradient(to bottom, #ffffff 5%, #e1dddd 100%); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1dddd',GradientType=0); font-size: 16px; line-height: 1em; position: relative; }
+/* 编辑 */
+.m_redact{
 
-.m_search .submit_btn:hover{ background: #fff; background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e1dddd), color-stop(1, #ffffff)); background:-moz-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:-webkit-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:-o-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:-ms-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:linear-gradient(to bottom, #e1dddd 5%, #ffffff 100%); }
+}
+.m_redact ul{
+	
+}
+.m_redact li{
+	
+}
+.m_redact ol{
+	
+}
+.m_redact p{
+	
+}
+.m_redact img{
+	
+}
+.m_redact i{
+	
+}
+.m_redact b{
+	
+}
 
-.m_search .btn{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; font-size: 0; border:none; cursor: pointer; }
 
 
 
@@ -162,7 +210,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 	
 	   B色块类
 
-	  	  主色
+	  	  主色 d13306
 	 	  辅色 
     	高亮色
     	阴影色
@@ -172,9 +220,9 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 	   T文字类
 
-	  T1正文字
-	  T2弱文字
-	  T3高亮字
+	  T1正文字 333333
+	  T2弱文字 cdcbcb
+	  T3高亮字 373636
 
 
 	  字体颜色 

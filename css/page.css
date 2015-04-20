@@ -3,14 +3,23 @@
 
 
 
+/* index 服务范围 */
+.index_serve{
+
+}
 
 
-
-
-
-
-
-
+/* index 经典案例 */
+.index_case{ margin: 20px auto; }
+.index_case .center{ overflow: hidden; }
+.index_case .center .itme{ float: left; display: block; width: 32%; margin: 6px 0 20px 2%; }
+.index_case .center .itme:first-child{ margin-left:0; }
+.index_case .center .itme .border{ border: 1px solid #cdcbcb; }
+.index_case .center .itme .img{ display: block; width: 100%; }
+.index_case .center .itme .title{ background: #cdcbcb; font-size: 1.8em; line-height: 1em; padding:20px 10px; text-align: center; color: #333333; }
+.index_case .center .itme:hover{ background: #d13306; }
+.index_case .center .itme:hover .border{ border: 1px solid #d13306; }
+.index_case .center .itme:hover .title{ background: #d13306; color: #fff; }
 
 
 
@@ -48,7 +57,13 @@
 
 /* css3动画 */
 .m_search .submit_btn,
-.m_search .input_txt{
+.m_search .input_txt,
+.m_nav .link,
+.m_nav .link .bg,
+.m_nav_b .link .bg,
+.index_case .center .itme,
+.index_case .center .itme .border,
+.index_case .center .itme .title{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
