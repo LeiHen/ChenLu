@@ -4,9 +4,17 @@
 
 
 /* index 服务范围 */
-.index_serve{
+.index_serve{ overflow: hidden; margin: 40px 0; }
+.index_serve .itme{ width: 23%; padding: 0 0 0 2.6%; float: left; }
+.index_serve .itme:first-child{ padding:0; }
+.index_serve .itme .title{ font-size: 16px; line-height: 1em; color: #d13306; padding: 0 0 6px 0; border-bottom:1px solid #d13306; }
+.index_serve .itme .lits{ margin: 10px 0; border-right:1px dotted #d13306; }
+.index_serve .itme .lits li{ list-style-type: disc; margin: 0 0 0 20px; padding: 4px 0; font-size: 1.4em; line-height: 1em; }
+.index_serve .itme .btn{ display: inline-block; +display: inline; +zoom: 1; padding: 4px 0 4px 10px; margin: 0 0 0 10px ; color: #333333; /*text-transform: uppercase; */font-size: 0.7em; line-height: 1em; float: right; }
+.index_serve .itme .btn:hover{ color: #d13306; }
+.index_serve  .itme_img{ }
+.index_serve  .itme_img img{ display: block; width: 100%; }
 
-}
 
 
 /* index 经典案例 */
@@ -55,6 +63,10 @@
 
 
 
+
+
+
+
 /* css3动画 */
 .m_search .submit_btn,
 .m_search .input_txt,
@@ -63,7 +75,9 @@
 .m_nav_b .link .bg,
 .index_case .center .itme,
 .index_case .center .itme .border,
-.index_case .center .itme .title{
+.index_case .center .itme .title,
+.m_nav_sub .link,
+.m_article .itme .line{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
