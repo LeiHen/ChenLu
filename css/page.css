@@ -1,8 +1,6 @@
 @charset "utf-8";
 
 
-
-
 /* index 服务范围 */
 .index_serve{ overflow: hidden; margin: 40px 0; }
 .index_serve .itme{ width: 23%; padding: 0 0 0 2.6%; float: left; }
@@ -14,7 +12,6 @@
 .index_serve .itme .btn:hover{ color: #d13306; }
 .index_serve  .itme_img{ }
 .index_serve  .itme_img img{ display: block; width: 100%; }
-
 
 
 /* index 经典案例 */
@@ -32,41 +29,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* css3动画 */
 .m_search .submit_btn,
 .m_search .input_txt,
@@ -77,7 +39,16 @@
 .index_case .center .itme .border,
 .index_case .center .itme .title,
 .m_nav_sub .link,
-.m_article .itme .line{
+.m_article .itme .line,
+.m_page .link,
+.m_prenext_article .link,
+.m_prenext_article .line,
+.m_case .itme,
+.m_case .itme .img_wrap,
+.m_case .itme .img_wrap .float,
+.m_case .itme .img_wrap .float::before,
+.m_case .itme .img_wrap .float::after,
+.m_case .itme .title{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;

@@ -23,6 +23,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon_nav:before {
+	content: "\e607";
+}
+
 .icon_clock:before {
 	content: "\e600";
 }
@@ -54,3 +58,4 @@
 .icon_search:before {
 	content: "\e986";
 }
+

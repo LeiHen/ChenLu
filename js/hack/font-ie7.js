@@ -5,6 +5,7 @@
 		el.innerHTML = '<span style="font-family: \'icomoon\'">' + entity + '</span>' + html;
 	}
 	var icons = {
+		'icon_nav': '&#xe607;',
 		'icon_clock': '&#xe600;',
 		'icon_minus': '&#xe601;',
 		'icon_plus': '&#xe602;',
