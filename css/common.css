@@ -23,7 +23,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 
 /* head */
-.header{ background:url(../images/head_bg.jpg) repeat-x 0 0; height:  87px; }
+.header{ min-width: 1000px; background:url(../images/head_bg.jpg) repeat-x 0 0; height:  87px; overflow: hidden;}
 .header .logo{ display: inline-block; float: left; }
 .header .logo img{ display: block; max-height: 74px; margin: 6px 0; }
 .header .m_search{ float:right; }
