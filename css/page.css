@@ -29,6 +29,41 @@
 
 
 
+/* 联系我们 */
+.services{ }
+.services .info{ }
+.services .info .cover{ width: 100%; display: block; }
+.services .info .txt{ position: relative; padding: 0 46% 0 0; }
+.services .info .txt p{ margin: 10px 0; font-size: 1.4em; line-height: 1.6em; }
+.services .info .txt .name{ font-size: 3em; line-height: 1em; margin: 20px 0 20px 0; }
+.services .info .map{ position: absolute; top:0; right: 0; width: 40%; height: 100%; }
+
+
+/* 留言板 */
+.message{ }
+.message .content{ position: relative; padding-left:40%; }
+.message .content .cover{ display: block; position: absolute; left: 0; top: 0; width:38.2%; }
+.message .content .form{ }
+.message .content .form .itme{ margin: 20px 0; position: relative; }
+.message .content .form .itme .import,
+.message .content .form .itme .hint{ font-size: 1.8em; line-height: 1.8em; display: block; padding: 4px 3%; width: auto; }
+.message .content .form .itme .import{ border: 1px solid #cdcbcb; background: none; width: 93.6%; outline: none; color: #333333; }
+.message .content .form.itme textarea.import{ height: 192px; }
+.message .content .form .itme .import:hover{border: 1px solid #d13306;}
+.message .content .form .itme .import:focus{ border: 1px solid #d13306; outline: 2px solid #d13306; }
+.message .content .form .itme .hint{ position: absolute; display: inline; top: 4px; left: 0; color: #cdcbcb; }
+.message .content .form .itme .btn{ width: 100%; display: block; }
+
+
+/* 404 */
+.page404{ position: relative; text-align: center; }
+.page404 .img{ display: block; width: 100%; z-index: 0; }
+.page404 .btn{ position: absolute; top: 50%; margin:  0 0 0 -2.4em; padding: 4px 14px; background: #cdcbcb; background: rgba(205,205,205,.6); }
+.page404 .btn:hover{ background: #d13306; }
+
+
+
+
 /* css3动画 */
 .m_search .submit_btn,
 .m_search .input_txt,
@@ -48,7 +83,11 @@
 .m_case .itme .img_wrap .float,
 .m_case .itme .img_wrap .float::before,
 .m_case .itme .img_wrap .float::after,
-.m_case .itme .title{
+.m_case .itme .title,
+.message .content .form .itme .import,
+.n_btn,
+.page404 .btn,
+.m_banner .itme{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
