@@ -10,7 +10,8 @@
 * @dependent:总初始化
 */
 function mianInit(){
-	
+	//清除
+	clearText('search','输入关键字');
 }
 mianInit();
 /* @end **/

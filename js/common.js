@@ -152,15 +152,90 @@ function bannerTab(ID){
 
 
 /**
-* @name     :
+* @name     :clearText
 * @author   :Nice
 * @version  :
-* @explain  :
+* @explain  :清除文本
 */
 
 
-function clearText(e,txt){
-    $
+function clearText(id,txt){
+    var e=$("#"+id);
+    var hint=e.next(".hint");
+
+    // function ct() {
+    //     var val=e.val();
+    //     var text=hint.text();
+
+    //     console.log(val);
+    //     console.log(text);
+    //     //获取焦点
+    //     if(val=='' || text==txt){
+    //         // e.focus();
+    //         hint.hide();
+    //         // hint.hide('slow');
+    //         // e.val('');
+    //         // console.log(s);
+    //     }
+
+       
+
+       
+    // }
+
+    // function ctBlur(){
+    //     var val=e.val();
+    //     var text=hint.text();
+    //     //失去焦点
+    //     if(val=='' || text==txt){
+    //         hint.show();
+    //     }
+    // }
+
+
+    // e.focus(ct);
+    // e.blur(ctBlur);
+
+    var val=e.val();
+    var text=hint.text();
+
+    e.focus(function(event) {
+        if (e.val()=='') {
+            hint.hide();
+        };
+    });
+
+
+    e.blur(function(event) {
+        if (e.val()=='') {
+           hint.show();
+        };
+    });
+
+    hint.click(function(event) {
+        if (e.val()=='') {
+            hint.hide();
+        };
+        e.focus();
+    });
+
+
+
+
+
+
+
+
+
+
+
+    // e.focus(ct);
+
+    // s.click(ct);
+
+
+
+    
 }
 /* @end **/
 
@@ -173,8 +248,8 @@ function test(test){
     console.log();
 }
 
-test('z');
-test('x');
+// test('z');
+// test('x');
 
 
 /**
