@@ -40,7 +40,7 @@
                 
                 
                 <div class="m_search">
-                    <input type="search" class="input_txt" >
+                    <input type="search" class="input_txt" id="search">
                     <span class="hint">输入关键字</span>
                     
                     <div class="submit_btn icon_search">
@@ -81,17 +81,17 @@
     
                 <dl class="form">
                     <dd class="itme">
-                        <input type="text" class="import">
+                        <input type="text" class="import" id="name">
                         <span class="hint">姓名</span>
                     </dd>
                     
                     <dd class="itme">
-                        <input type="text" class="import">
+                        <input type="text" class="import" id="company">
                         <span class="hint">公司</span>
                     </dd>
                     
                     <dd class="itme">
-                        <textarea class="import" name="" id="" cols="30" rows="6"></textarea>
+                        <textarea class="import" name="" id="messageInfo" cols="30" rows="6"></textarea>
                         <span class="hint">内容</span>
                     </dd>
                     
@@ -172,7 +172,13 @@
         <script type="text/javascript">	
 			//初始化 统一入口
 			function init(){
-
+                //清除
+	            clearText('name','姓名');
+	            clearText('company','公司');
+	            clearText('messageInfo','内容');
+                
+                //提交验证
+                
 			}
 			init();
 		</script>

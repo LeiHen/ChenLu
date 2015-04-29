@@ -19,7 +19,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 /* head */
 .header{ min-width: 1000px; background:url(../images/head_bg.jpg) repeat-x 0 0; height:  87px; overflow: hidden;}
-.header .logo{ display: inline-block; float: left; }
+.header .logo{ display: inline-block;+display: inline;+zoom:0; float: left; }
 .header .logo img{ display: block; max-height: 70px; margin: 8px 0; }
 .header .m_search{ float:right; }
 .header .m_nav{ float:right; }
@@ -29,7 +29,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 /* 中间 */
 .main{display: block;}
 
-.sub_main{ margin: 20px auto; }
+.sub_main{ margin: 20px auto;display: block; }
 .sub_main .content{ padding: 0 0 0 220px; position: relative; overflow: hidden; min-height: 500px; }
 .sub_main .content .m_page{ margin:30px auto; text-align: right; }
 
@@ -111,10 +111,11 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 
 /* 搜索 */
-.m_search{ position: relative; font-size: 10px; margin: 12px 0 0 0; }
-.m_search input{ float: left; display:block; font-size: 1.4em; line-height: 1em; border:1px solid #cdcbcb; background: none; outline: none; position: relative; }
-.m_search .input_txt{ padding: 3px 10px; width: 100px; border-radius:8px; background: #fff; z-index: 1; }
+.m_search{ position: relative; font-size: 10px; margin: 12px 0 0 0;min-width: 142px; }
+.m_search input{ float: left; display:block; font-size: 1.4em; line-height: 1em; border:1px solid #cdcbcb; background: none; outline: none; position: relative; left: 0;}
+.m_search .input_txt{ padding: 3px 10px; width: 100px; border-radius:8px; background: #fff; z-index: 1;}
 .m_search .input_txt:focus{ width: 160px; }
+
 .m_search .hint{ position: absolute; padding: 3px 10px; left: 0; z-index: 1; display:block; font-size: 1.4em; color: #cdcbcb; }
 .m_search .submit_btn{ float: left; display: block; width: 40px; text-align: center; padding: 3px 0px 3px 10px; margin: 0 0 0 -10px; border:1px solid #cdcbcb; color: #cdcbcb; background: #fff; background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #e1dddd)); background:-moz-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:-webkit-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:-o-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:-ms-linear-gradient(top, #ffffff 5%, #e1dddd 100%); background:linear-gradient(to bottom, #ffffff 5%, #e1dddd 100%); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1dddd',GradientType=0); font-size: 16px; line-height: 1em; position: relative; }
 .m_search .submit_btn:hover{ background: #fff; background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e1dddd), color-stop(1, #ffffff)); background:-moz-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:-webkit-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:-o-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:-ms-linear-gradient(top, #e1dddd 5%, #ffffff 100%); background:linear-gradient(to bottom, #e1dddd 5%, #ffffff 100%); }
